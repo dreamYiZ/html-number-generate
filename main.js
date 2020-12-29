@@ -51,8 +51,6 @@ function addButton(nodeText = "开始计数") {
 function changeKeyDown() {
   document.onkeydown = function disableKeys(event) {
     if (typeof event != "undefined") {
-      console.log(event);
-
       if (event.ctrlKey && event.code === "F5") {
         sessionStorage.setItem("cache__number", currnetN);
         window.location.reload();
